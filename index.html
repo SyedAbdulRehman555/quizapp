@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body onload="startQuiz()">
+    <div class="main">
+      <div class="content">
+        <div class="qlogo"><img src="./download.png" /></div>
+
+        <h1 id="ques"></h1>
+        <div class="op1">
+          <input
+            type="radio"
+            group="q1"
+            value="1"
+            id="opt1"
+            class="opt_grp"
+            name="g1"
+            onclick="enable_btn()"
+          />
+          <p id="p1"></p>
+        </div>
+        <div class="op2">
+          <input
+            type="radio"
+            group="q1"
+            value="2"
+            id="opt2"
+            class="opt_grp"
+            name="g1"
+            onclick="enable_btn()"
+          />
+          <p id="p2"></p>
+        </div>
+        <div class="op3">
+          <input
+            type="radio"
+            group="q1"
+            value="3"
+            id="opt3"
+            class="opt_grp"
+            name="g1"
+            onclick="enable_btn()"
+          />
+          <p id="p3"></p>
+        </div>
+        <button id="btn" class="btn" onclick="getQues()">Next</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
